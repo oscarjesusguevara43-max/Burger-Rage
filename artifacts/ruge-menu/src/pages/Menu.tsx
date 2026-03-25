@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 
 const carouselImages = [
-  { src: "/burger-recoleta.jpg", label: "RECOLETA" },
-  { src: "/hamburguesas.jpg", label: "RUGE SMASH" },
-  { src: "/burger-almagro.jpg", label: "ALMAGRO" },
+  { src: "/burger-bacon.jpg", label: "RECOLETA" },
+  { src: "/burger-soho.jpg", label: "PALERMO SOHO" },
+  { src: "/burger-triple.jpg", label: "RUGE SMASH" },
+  { src: "/burger-clasica.jpg", label: "FLORESTA" },
+  { src: "/burger-huevo.jpg", label: "ALMAGRO" },
 ];
 
 function Carousel() {
@@ -24,6 +26,7 @@ function Carousel() {
           className={`carousel-slide ${i === current ? "active" : ""}`}
         >
           <img src={img.src} alt={img.label} />
+          <div className="carousel-overlay" />
           <div className="carousel-label">{img.label}</div>
         </div>
       ))}
@@ -73,7 +76,7 @@ function MenuItem({ name, highlight, description, price, prices, isNew }: MenuIt
           <div className="price-multi">
             {prices.map((p) => (
               <div key={p.label} className="price-row">
-                <span className="price-label">{p.label}</span>
+                {p.label && <span className="price-label">{p.label}</span>}
                 <span className="price-pill small">${p.value}</span>
               </div>
             ))}
@@ -89,24 +92,43 @@ interface SectionProps {
   title: string;
   titleHighlight?: string;
   children: React.ReactNode;
+  heroImg?: string;
+  heroAlt?: string;
 }
 
-function Section({ title, titleHighlight, children }: SectionProps) {
+function Section({ title, titleHighlight, children, heroImg, heroAlt }: SectionProps) {
   const parts = titleHighlight ? title.split(titleHighlight) : [title];
   return (
     <section className="menu-section">
-      <div className="section-header">
-        <h2 className="section-title">
-          {titleHighlight ? (
-            <>
-              {parts[0]}
-              <span className="yellow">{titleHighlight}</span>
-              {parts[1]}
-            </>
-          ) : title}
-        </h2>
-        <div className="section-divider" />
-      </div>
+      {heroImg && (
+        <div className="section-hero">
+          <img src={heroImg} alt={heroAlt || title} className="section-hero-img" />
+          <div className="section-hero-overlay" />
+          <h2 className="section-hero-title">
+            {titleHighlight ? (
+              <>
+                {parts[0]}
+                <span className="yellow">{titleHighlight}</span>
+                {parts[1]}
+              </>
+            ) : title}
+          </h2>
+        </div>
+      )}
+      {!heroImg && (
+        <div className="section-header">
+          <h2 className="section-title">
+            {titleHighlight ? (
+              <>
+                {parts[0]}
+                <span className="yellow">{titleHighlight}</span>
+                {parts[1]}
+              </>
+            ) : title}
+          </h2>
+          <div className="section-divider" />
+        </div>
+      )}
       <div className="section-items">
         {children}
       </div>
@@ -124,7 +146,7 @@ function ComboCard() {
         <div className="combo-price">$12<sup>99</sup></div>
         <div className="combo-note">Solo por tiempo limitado</div>
       </div>
-      <div className="combo-fire right">🔥</div>
+      <div className="combo-fire">🔥</div>
     </div>
   );
 }
@@ -137,8 +159,16 @@ function WhatsAppButton() {
       rel="noopener noreferrer"
       className="whatsapp-btn"
     >
-      🔥 ¡PEDIR AHORA!
+      🔥 ¡PEDIR AHORA POR WHATSAPP!
     </a>
+  );
+}
+
+function FoodPhoto({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="food-photo-wrap">
+      <img src={src} alt={alt} className="food-photo" />
+    </div>
   );
 }
 
@@ -160,7 +190,7 @@ export default function Menu() {
 
       <main className="menu-content">
 
-        <Section title="HAMBUR" titleHighlight="GUESAS">
+        <Section title="HAMBUR" titleHighlight="GUESAS" heroImg="/burger-tomate.jpg" heroAlt="Hamburguesas Ruge">
           <MenuItem
             name="RECOLETA "
             highlight="🔥"
@@ -176,6 +206,9 @@ export default function Menu() {
               { label: "TRIPLE", value: "9.99" },
             ]}
           />
+
+          <FoodPhoto src="/burger-triple.jpg" alt="Ruge Smash Triple" />
+
           <MenuItem
             name="FLOR"
             highlight="ESTA"
@@ -206,6 +239,9 @@ export default function Menu() {
             price="6.99"
             isNew
           />
+
+          <FoodPhoto src="/burger-bacon.jpg" alt="Recoleta Burger" />
+
           <MenuItem
             name="AL"
             highlight="MAGRO"
@@ -242,12 +278,18 @@ export default function Menu() {
             description="Punta de punta trasera molida hecha a la parrisha, queso cheddar fundido, pollo crispy, tocineta crispy, tomate y huevo."
             price="14.99"
           />
+
+          <FoodPhoto src="/burger-huevo.jpg" alt="Burger Huevo" />
+
           <MenuItem
             name="PALERMO "
             highlight="SOHO"
             description="Carne súper smash, queso cheddar fundido, chuleta ahumada, papas en hilo y cebolla caramelizada."
             price="10.99"
           />
+
+          <FoodPhoto src="/burger-soho.jpg" alt="Palermo Soho" />
+
           <MenuItem
             name="RETI"
             highlight="RO"
@@ -286,7 +328,7 @@ export default function Menu() {
 
         <ComboCard />
 
-        <Section title="EN" titleHighlight="TRADAS">
+        <Section title="EN" titleHighlight="TRADAS" heroImg="/provoleta.jpg" heroAlt="Entradas Ruge">
           <MenuItem
             name="RUGE "
             highlight="BOOM 🔥"
@@ -370,7 +412,7 @@ export default function Menu() {
           />
         </Section>
 
-        <Section title="PA" titleHighlight="PAS">
+        <Section title="PA" titleHighlight="PAS" heroImg="/papas-cargadas.jpg" heroAlt="Papas Ruge">
           <MenuItem
             name="PAPAS AL "
             highlight="CHORI"
@@ -421,7 +463,7 @@ export default function Menu() {
           />
         </Section>
 
-        <Section title="ENSA" titleHighlight="LADAS">
+        <Section title="ENSA" titleHighlight="LADAS" heroImg="/ensalada-cesar.jpg" heroAlt="Ensaladas Ruge">
           <MenuItem
             name="ENSALADA DE "
             highlight="PORK BELLY"
@@ -441,10 +483,8 @@ export default function Menu() {
           <MenuItem
             name="ENSALADA "
             highlight="RUGE"
-            description="Lechuga, cebolla, tomate, maíz, aguacata y vinagreta de parrisha."
-            prices={[
-              { label: "", value: "5.99" },
-            ]}
+            description="Lechuga, cebolla, tomate, maíz, aguacate y vinagreta de parrisha."
+            price="5.99"
           />
           <MenuItem
             name="ENSALADA "
@@ -461,7 +501,7 @@ export default function Menu() {
           />
         </Section>
 
-        <Section title="PARRI" titleHighlight="SHA">
+        <Section title="PARRI" titleHighlight="SHA" heroImg="/parrisha-carne.jpg" heroAlt="Parrisha Ruge">
           <div className="parrisha-grid">
             <div className="parrisha-card">
               <img src="/parrisha-rugelito.jpg" alt="Parrisha Rugelito" className="parrisha-img" />
@@ -496,6 +536,15 @@ export default function Menu() {
               </div>
             </div>
           </div>
+        </Section>
+
+        <Section title="POS" titleHighlight="TRES" heroImg="/postre.jpg" heroAlt="Postres Ruge">
+          <MenuItem
+            name="RUGE "
+            highlight="COOKIE"
+            description="Cookie red velvet y cookie chocolate chip con helado y salsa de chocolate."
+            price="6.99"
+          />
         </Section>
 
         <WhatsAppButton />
