@@ -182,7 +182,7 @@ export default function Menu() {
 
       <main className="menu-content">
 
-        <Section title="HAMBUR" titleHighlight="GUESAS" heroImg="/burger-tomate.jpg" heroAlt="Hamburguesas Ruge">
+        <Section title="HAMBUR" titleHighlight="GUESAS" heroImg="/burger-hero.jpg" heroAlt="Hamburguesas Ruge">
           <MenuItem
             name="RECOLETA "
             highlight="🔥"
