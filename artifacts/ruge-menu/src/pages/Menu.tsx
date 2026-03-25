@@ -486,40 +486,42 @@ export default function Menu() {
         </Section>
 
         <Section title="PARRI" titleHighlight="SHA" heroImg="/parrisha-carne.jpg" heroAlt="Parrisha Ruge">
-          <div className="parrisha-grid">
-            <div className="parrisha-card">
-              <img src="/parrisha-rugelito.jpg" alt="Parrisha Rugelito" className="parrisha-img" />
-              <div className="parrisha-info">
-                <div className="parrisha-name">PARRISHA <span className="yellow">RUGELITO</span> <span className="badge-new">NEW</span></div>
-                <div className="parrisha-desc">150g de punta trasera importada (Certified Angus Beef) 150g milanesa o churrasco de pollo, 150g pork belly, ensalada y papas a elección.</div>
-                <div className="price-pill large">$19.99</div>
-              </div>
-            </div>
-            <div className="parrisha-card">
-              <img src="/parrisha-ruge.jpg" alt="Parrisha Ruge" className="parrisha-img" />
-              <div className="parrisha-info">
-                <div className="parrisha-name">PARRI<span className="yellow">SHA RUGE</span></div>
-                <div className="parrisha-desc">150g de punta trasera importada (Certified Angus Beef) 150g de pechuga de pollo a la parrisha, 1 chorizo ahumado y papas a elección.</div>
-                <div className="price-pill large">$16.99</div>
-              </div>
-            </div>
-            <div className="parrisha-card">
-              <img src="/tapa-cuadril.jpg" alt="Tapa de Cuadril" className="parrisha-img" />
-              <div className="parrisha-info">
-                <div className="parrisha-name">TAPA DE <span className="yellow">CUADRIL</span></div>
-                <div className="parrisha-desc">300g de punta trasera importada (Certified Angus Beef) a la parrisha, acompañada de papas a elección y ensalada.</div>
-                <div className="price-pill large">$20.99</div>
-              </div>
-            </div>
-            <div className="parrisha-card">
-              <img src="/rib-eye.jpg" alt="Rib Eye" className="parrisha-img" />
-              <div className="parrisha-info">
-                <div className="parrisha-name">RIB <span className="yellow">EYE</span></div>
-                <div className="parrisha-desc">300g de rib eye importado (Certified Angus Beef) a la parrisha, acompañado de ensalada ruge y papas a elección.</div>
-                <div className="price-pill large">$21.99</div>
-              </div>
-            </div>
-          </div>
+          <MenuItem
+            name="PARRILLA "
+            highlight="RUGE"
+            description="150g de punta trasera importada (Certified Angus Beef), 150g de pechuga de pollo a la parrisha, 1 chorizo ahumado y papas a elección."
+            price="18.99"
+          />
+          <MenuItem
+            name="COLITA DE "
+            highlight="CUADRIL"
+            description="300g de colita de res importada (Certified Angus Beef) a la parrisha, acompañada de papas a elección y ensalada ruge."
+            price="23.99"
+          />
+          <MenuItem
+            name="PARRILLA "
+            highlight="RUGELITO"
+            description="Punta trasera importada 150g (Certified Angus Beef), 150g de milanesa o churrasco de pollo, 150g de pork belly, ensalada y papas a elección."
+            price="22.99"
+          />
+          <MenuItem
+            name="TAPA DE "
+            highlight="CUADRIL"
+            description="Punta trasera importada 300g (Certified Angus Beef) a la parrisha, acompañada de papas a elección y ensalada."
+            price="23.99"
+          />
+          <MenuItem
+            name="RIB "
+            highlight="EYE"
+            description="300g de Rib Eye importada (Certified Angus Beef) a la parrisha, acompañado de ensalada ruge y papas a elección."
+            price="24.99"
+          />
+          <MenuItem
+            name="TIRAS DE ASADO "
+            highlight="RUGE"
+            description="300g de tiras de asado importada (Certified Angus Beef) a la parrisha, acompañada con 1 chorizo ahumado, papas a elección y ensalada."
+            price="23.99"
+          />
         </Section>
 
         <Section title="POS" titleHighlight="TRES" heroImg="/postre.jpg" heroAlt="Postres Ruge">
