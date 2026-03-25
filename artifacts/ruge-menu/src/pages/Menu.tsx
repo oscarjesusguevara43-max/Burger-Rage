@@ -164,14 +164,6 @@ function WhatsAppButton() {
   );
 }
 
-function FoodPhoto({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div className="food-photo-wrap">
-      <img src={src} alt={alt} className="food-photo" />
-    </div>
-  );
-}
-
 export default function Menu() {
   return (
     <div className="menu-page">
@@ -207,8 +199,6 @@ export default function Menu() {
             ]}
           />
 
-          <FoodPhoto src="/burger-triple.jpg" alt="Ruge Smash Triple" />
-
           <MenuItem
             name="FLOR"
             highlight="ESTA"
@@ -239,8 +229,6 @@ export default function Menu() {
             price="6.99"
             isNew
           />
-
-          <FoodPhoto src="/burger-bacon.jpg" alt="Recoleta Burger" />
 
           <MenuItem
             name="AL"
@@ -279,16 +267,12 @@ export default function Menu() {
             price="14.99"
           />
 
-          <FoodPhoto src="/burger-huevo.jpg" alt="Burger Huevo" />
-
           <MenuItem
             name="PALERMO "
             highlight="SOHO"
             description="Carne súper smash, queso cheddar fundido, chuleta ahumada, papas en hilo y cebolla caramelizada."
             price="10.99"
           />
-
-          <FoodPhoto src="/burger-soho.jpg" alt="Palermo Soho" />
 
           <MenuItem
             name="RETI"
