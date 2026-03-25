@@ -436,14 +436,14 @@ body {
   font-style: italic;
 }
 
-/* ===== PARRISHA SECTION ===== */
-.parrisha-grid {
+/* ===== PARRILLA SECTION ===== */
+.parrilla-grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.parrisha-card {
+.parrilla-card {
   background: var(--card-bg);
   border: 1px solid var(--border-yellow);
   border-radius: 10px;
@@ -452,21 +452,21 @@ body {
   flex-direction: column;
 }
 
-.parrisha-img {
+.parrilla-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   object-position: center top;
 }
 
-.parrisha-info {
+.parrilla-info {
   padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.parrisha-name {
+.parrilla-name {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -479,11 +479,11 @@ body {
   gap: 4px;
 }
 
-.parrisha-name .yellow {
+.parrilla-name .yellow {
   color: var(--yellow);
 }
 
-.parrisha-desc {
+.parrilla-desc {
   font-size: 0.78rem;
   color: var(--gray);
   line-height: 1.4;

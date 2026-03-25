@@ -186,7 +186,7 @@ export default function Menu() {
           <MenuItem
             name="RECOLETA "
             highlight="🔥"
-            description="Blend de punta trasera molida hecha a la parrisha, tiras de punta trasera envueltas en queso cheddar, tocineta crispy y pepinillos."
+            description="Blend de punta trasera molida hecha a la parrilla, tiras de punta trasera envueltas en queso cheddar, tocineta crispy y pepinillos."
             price="10.99"
           />
           <MenuItem
@@ -212,7 +212,7 @@ export default function Menu() {
           <MenuItem
             name="PUERTO "
             highlight="MADERO"
-            description="Doble blend de punta trasera molida hecha a la parrisha, queso cheddar fundido, doble tocineta crispy y doble pepinillo."
+            description="Doble blend de punta trasera molida hecha a la parrilla, queso cheddar fundido, doble tocineta crispy y doble pepinillo."
             price="11.99"
           />
           <MenuItem
@@ -233,37 +233,37 @@ export default function Menu() {
           <MenuItem
             name="AL"
             highlight="MAGRO"
-            description="Blend de punta trasera molida hecha a la parrisha, queso cheddar fundido, maxi tocineta crispy, cebolla, queso cheddar y tomate."
+            description="Blend de punta trasera molida hecha a la parrilla, queso cheddar fundido, maxi tocineta crispy, cebolla, queso cheddar y tomate."
             price="10.99"
           />
           <MenuItem
             name="AVEL"
             highlight="LANEDA"
-            description="Blend de punta trasera molida hecha a la parrisha, queso cheddar fundido, tiras de punta trasera, tocineta crispy."
+            description="Blend de punta trasera molida hecha a la parrilla, queso cheddar fundido, tiras de punta trasera, tocineta crispy."
             price="10.99"
           />
           <MenuItem
             name="PALER"
             highlight="MO"
-            description="Blend de punta trasera molida hecha a la parrisha, queso cheddar fundido, cebolla a la BBQ, tocineta crispy y tomate."
+            description="Blend de punta trasera molida hecha a la parrilla, queso cheddar fundido, cebolla a la BBQ, tocineta crispy y tomate."
             price="8.99"
           />
           <MenuItem
             name="SAN "
             highlight="TELMO"
-            description="Doble carne smash de punta trasera molida hecha a la parrisha, queso cheddar fundido, tocineta crispy, aros de cebolla y pepinillos."
+            description="Doble carne smash de punta trasera molida hecha a la parrilla, queso cheddar fundido, tocineta crispy, aros de cebolla y pepinillos."
             price="9.99"
           />
           <MenuItem
             name="NUEVA "
             highlight="POMPEYA"
-            description="Blend de punta trasera molida hecha a la parrisha, queso gouda, cebolla caramelizada y huevo."
+            description="Blend de punta trasera molida hecha a la parrilla, queso gouda, cebolla caramelizada y huevo."
             price="8.99"
           />
           <MenuItem
             name="PALERMO "
             highlight="HOLLYWOOD"
-            description="Punta de punta trasera molida hecha a la parrisha, queso cheddar fundido, pollo crispy, tocineta crispy, tomate y huevo."
+            description="Punta de punta trasera molida hecha a la parrilla, queso cheddar fundido, pollo crispy, tocineta crispy, tomate y huevo."
             price="14.99"
           />
 
@@ -277,7 +277,7 @@ export default function Menu() {
           <MenuItem
             name="RETI"
             highlight="RO"
-            description="Doble carne smash de punta trasera molida hecha a la parrisha, queso gouda, cebolla crispy y tocineta crispy."
+            description="Doble carne smash de punta trasera molida hecha a la parrilla, queso gouda, cebolla crispy y tocineta crispy."
             price="9.99"
             isNew
           />
@@ -290,19 +290,19 @@ export default function Menu() {
           <MenuItem
             name="VILLA "
             highlight="CRESPO"
-            description="Pollo a la parrisha con queso mozzarella fundido, tocineta crispy y tomate."
+            description="Pollo a la parrilla con queso mozzarella fundido, tocineta crispy y tomate."
             price="7.99"
           />
           <MenuItem
             name="CAMINITO "
             highlight="KIDS"
-            description="Blend de punta trasera smash molida hecha a la parrisha, queso cheddar fundido y tocineta crispy."
+            description="Blend de punta trasera smash molida hecha a la parrilla, queso cheddar fundido y tocineta crispy."
             price="5.99"
           />
           <MenuItem
             name="LA "
             highlight="BOCA"
-            description="Blend de Punta Trasera Smash molida hecha a la parrisha, con mozzarella fundido, huevo y tomate."
+            description="Blend de Punta Trasera Smash molida hecha a la parrilla, con mozzarella fundido, huevo y tomate."
             price="6.99"
           />
           <div className="menu-note">
@@ -343,7 +343,7 @@ export default function Menu() {
           <MenuItem
             name="ALI"
             highlight="TAS"
-            description="Todas nuestras alitas son hecha únicamente a la parrisha. Las puedes saltear con tu salsa a elección: BBQ, picantes, miel mostaza o sin salsa."
+            description="Todas nuestras alitas son hecha únicamente a la parrilla. Las puedes saltear con tu salsa a elección: BBQ, picantes, miel mostaza o sin salsa."
             prices={[
               { label: "x6", value: "5.99" },
               { label: "x12", value: "9.99" },
@@ -355,7 +355,7 @@ export default function Menu() {
           <MenuItem
             name="PROVOLETA "
             highlight="PARRILLERA"
-            description="Queso tipo provolone a la parrisha, con especias y papas chips de acompañante."
+            description="Queso tipo provolone a la parrilla, con especias y papas chips de acompañante."
             price="6.99"
           />
           <MenuItem
@@ -400,7 +400,7 @@ export default function Menu() {
           <MenuItem
             name="PAPAS AL "
             highlight="CHORI"
-            description="Papas fritas bañadas con queso cheddar fundido y chorizo a la parrisha con chimichurri."
+            description="Papas fritas bañadas con queso cheddar fundido y chorizo a la parrilla con chimichurri."
             price="8.99"
           />
           <MenuItem
@@ -412,7 +412,7 @@ export default function Menu() {
           <MenuItem
             name="PAPAS "
             highlight="PARRI"
-            description="Papas fritas bañadas con queso cheddar fundido, tocineta crispy, tiras de punta trasera y pollo a la parrisha."
+            description="Papas fritas bañadas con queso cheddar fundido, tocineta crispy, tiras de punta trasera y pollo a la parrilla."
             price="9.99"
           />
           <MenuItem
@@ -424,7 +424,7 @@ export default function Menu() {
           <MenuItem
             name="PAPAS "
             highlight="RUGE"
-            description="Papas fritas bañadas con queso cheddar fundido, tiras de punta trasera a la parrisha y tocineta crispy."
+            description="Papas fritas bañadas con queso cheddar fundido, tiras de punta trasera a la parrilla y tocineta crispy."
             price="8.99"
           />
           <MenuItem
@@ -467,7 +467,7 @@ export default function Menu() {
           <MenuItem
             name="ENSALADA "
             highlight="RUGE"
-            description="Lechuga, cebolla, tomate, maíz, aguacate y vinagreta de parrisha."
+            description="Lechuga, cebolla, tomate, maíz, aguacate y vinagreta de parrilla."
             price="5.99"
           />
           <MenuItem
@@ -479,23 +479,23 @@ export default function Menu() {
           <MenuItem
             name="ENSALADA "
             highlight="RUGELITO"
-            description="Lechuga, tomate, cebolla, vinagreta parrisha."
+            description="Lechuga, tomate, cebolla, vinagreta parrilla."
             price="3.99"
             isNew
           />
         </Section>
 
-        <Section title="PARRI" titleHighlight="SHA" heroImg="/parrisha-carne.jpg" heroAlt="Parrisha Ruge">
+        <Section title="PARRI" titleHighlight="LLA" heroImg="/parrilla-carne.jpg" heroAlt="Parrilla Ruge">
           <MenuItem
             name="PARRILLA "
             highlight="RUGE"
-            description="150g de punta trasera importada (Certified Angus Beef), 150g de pechuga de pollo a la parrisha, 1 chorizo ahumado y papas a elección."
+            description="150g de punta trasera importada (Certified Angus Beef), 150g de pechuga de pollo a la parrilla, 1 chorizo ahumado y papas a elección."
             price="18.99"
           />
           <MenuItem
             name="COLITA DE "
             highlight="CUADRIL"
-            description="300g de colita de res importada (Certified Angus Beef) a la parrisha, acompañada de papas a elección y ensalada ruge."
+            description="300g de colita de res importada (Certified Angus Beef) a la parrilla, acompañada de papas a elección y ensalada ruge."
             price="23.99"
           />
           <MenuItem
@@ -507,19 +507,19 @@ export default function Menu() {
           <MenuItem
             name="TAPA DE "
             highlight="CUADRIL"
-            description="Punta trasera importada 300g (Certified Angus Beef) a la parrisha, acompañada de papas a elección y ensalada."
+            description="Punta trasera importada 300g (Certified Angus Beef) a la parrilla, acompañada de papas a elección y ensalada."
             price="23.99"
           />
           <MenuItem
             name="RIB "
             highlight="EYE"
-            description="300g de Rib Eye importada (Certified Angus Beef) a la parrisha, acompañado de ensalada ruge y papas a elección."
+            description="300g de Rib Eye importada (Certified Angus Beef) a la parrilla, acompañado de ensalada ruge y papas a elección."
             price="24.99"
           />
           <MenuItem
             name="TIRAS DE ASADO "
             highlight="RUGE"
-            description="300g de tiras de asado importada (Certified Angus Beef) a la parrisha, acompañada con 1 chorizo ahumado, papas a elección y ensalada."
+            description="300g de tiras de asado importada (Certified Angus Beef) a la parrilla, acompañada con 1 chorizo ahumado, papas a elección y ensalada."
             price="23.99"
           />
         </Section>
