@@ -169,11 +169,7 @@ export default function Menu() {
     <div className="menu-page">
       <header className="menu-header">
         <div className="logo-area">
-          <div className="logo-icon">🔥</div>
-          <div>
-            <div className="logo-title">RUGE</div>
-            <div className="logo-subtitle">by Juan Reyes</div>
-          </div>
+          <img src="/logo-ruge.png" alt="Ruge by Juan Rugeles" className="logo-img" />
         </div>
         <div className="tagline">Sabor que te hace rugir</div>
       </header>
@@ -536,8 +532,7 @@ export default function Menu() {
         <WhatsAppButton />
 
         <footer className="menu-footer">
-          <div className="footer-logo">🔥 RUGE</div>
-          <div className="footer-sub">by Juan Reyes</div>
+          <img src="/logo-ruge.png" alt="Ruge by Juan Rugeles" className="footer-logo-img" />
           <div className="footer-copy">Todos los precios incluyen IVA</div>
         </footer>
       </main>
